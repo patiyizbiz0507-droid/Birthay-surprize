@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sana Özel Bir Doğum Günü 💗</title>
+<style>
+:root {
+  --cream: #fff0d9;
+  --cake: #f5dfbd;
+  --pink: #ed9caf;
+  --berry: #d94e68;
+  --brown: #785345;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; min-height: 100vh; padding: 28px 16px;
+  display: flex; justify-content: center; align-items: center;
+  background: radial-gradient(circle at top, #fff9ed, #f8dce0 75%);
+  color: var(--brown); font-family: Georgia, serif; text-align: center;
+}
+main { width: 100%; max-width: 430px; }
+.tiny { letter-spacing: 8px; color: var(--berry); }
+h1 { font-size: clamp(27px, 7vw, 36px); margin: 12px 0; }
+p { line-height: 1.7; }
+.sub { font-size: 15px; }
+.scene {
+  height: 300px; position: relative; margin: 12px auto 0;
+}
+.plate {
+  position: absolute; bottom: 24px; left: 7%; width: 86%;
+  height: 24px; border-radius: 50%;
+  background: #fffaf2; border: 3px solid #e8bfc0;
+  box-shadow: 0 9px 18px #88534818;
+}
+.base {
+  position: absolute; bottom: 40px; left: 13%; width: 74%;
+  height: 115px; border-radius: 18px 18px 28px 28px;
+  background: var(--cake); border: 3px solid #e7c89f;
+  box-shadow: inset 0 -16px #e8b9a1;
+}
+.base::before {
+  content: ""; position: absolute; left: -3px; right: -3px;
+  top: 10px; height: 20px; background: #fff8e9;
+  border-radius: 50%; border: 2px solid #e7c89f;
+}
+.strawberries {
+  position: absolute; top: 49px; width: 100%;
+  font-size: 25px; letter-spacing: 3px;
+}
+.lid {
+  position: absolute; bottom: 125px; left: 13%; width: 74%;
+  height: 66px; border-radius: 50% 50% 15px 15px;
+  background: #fff0d9; border: 3px solid #e7c89f;
+  z-index: 3; transition: transform 1s ease;
+}
+.lid::after {
+  content: "🍓  ♡  🍓"; position: absolute;
+  top: 20px; left: 0; width: 100%; font-size: 19px;
+}
+.candle {
+  position: absolute; bottom: 185px; left: calc(50% - 7px);
+  height: 51px; width: 14px; z-index: 4;
+  border-radius: 5px;
+  background: repeating-linear-gradient(
+    45deg, #fff 0 7px, #e99aaa 7px 13px
+  );
+}
+.flame {
+  position: absolute; bottom: 231px; left: calc(50% - 8px);
+  height: 24px; width: 17px; z-index: 5;
+  background: #ffb33e; border-radius: 60% 40% 60% 40%;
+  transform: rotate(45deg);
+  box-shadow: 0 0 18px #ffbd55;
+  animation: flicker .6s infinite alternate;
+  cursor: pointer;
+}
+@keyframes flicker {
+  to { transform: rotate(35deg) scale(.85); }
+}
+#blow {
+  background: var(--berry); color: white; border: 0;
+  border-radius: 30px; padding: 15px 23px; font-size: 16px;
+  font-weight: bold; cursor: pointer;
+  box-shadow: 0 6px 14px #d94e6830;
+}
+#blow:active { transform: scale(.97); }
+#letter {
+  display: none; text-align: left; white-space: pre-wrap;
+  background: #fffaf0; border: 2px solid #e8c5b6;
+  border-radius: 18px; padding: 23px 20px;
+  margin: 15px 0; line-height:
